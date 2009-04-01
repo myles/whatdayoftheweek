@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www\.whatdayoftheweek\.com$ [NC]
+RewriteRule ^(.*)$ http://whatdayoftheweek.com/$1 [R=301,L]
