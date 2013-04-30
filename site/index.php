@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<?php date_default_timezone_set('America/Toronto'); ?>
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
@@ -27,7 +28,7 @@
 			<div class="masthead">
 				<ul class="nav nav-pills pull-right">
 					<li class="active"><a href="index.php">Home</a></li>
-					<li><a href="birthday_day.php">Weekday of Your Birthday</a></li>
+					<li><a href="birthday_day.php">Birthday</a></li>
 				</ul>
 				<h3 class="muted">What Day of the Week?</h3>
 			</div>
