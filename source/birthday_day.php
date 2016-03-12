@@ -29,6 +29,7 @@
 		
 		<!-- Le styles -->
 		<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
 		<style type="text/css">
 			body { padding-top: 20px; padding-bottom: 40px; }
 			.container-narrow { margin: 0 auto; max-width: 700px; }
@@ -38,6 +39,8 @@
 			.jumbotron .btn { font-size: 21px; padding: 14px 24px; }
 			.marketing { margin: 60px 0; }
 			.marketing p + h4 { margin-top: 28px; }
+			.footer { text-align: center; }
+			.footer .fa-heart { font-size: 1.5em; vertical-align: middle; color: #da3a35; }
 		</style>
 	</head>
 	
@@ -69,14 +72,14 @@
 						<div class="control-group">
 							<label class="control-label" for="year">Year</label>
 							<div class="controls">
-								<input type="text" name="year" value="<?php print $year?>" size="4" maxlength="4">
+								<input type="number" name="year" value="<?php print $year?>" min="1900" max="2500" size="4" maxlength="4" required>
 							</div>
 						</div>
 						
 						<div class="control-group">
 							<label class="control-label" for="month">Month</label>
 							<div class="controls">
-								<select name="month" value="<?php print $month ?>">
+								<select name="month" value="<?php print $month ?>" required>
 									<option value="1" <?php if ($month == 1) echo 'selected="selected"' ?>>January</option>
 									<option value="2" <?php if ($month == 2) echo 'selected="selected"' ?>>February</option>
 									<option value="3" <?php if ($month == 3) echo 'selected="selected"' ?>>March</option>
@@ -96,7 +99,7 @@
 						<div class="control-group">
 							<label class="control-label" for="day">Day</label>
 							<div class="controls">
-								<input type="text" name="day" value="<?php print $day?>" maxlength="2" size="2" />
+								<input type="number" name="day" value="<?php print $day?>" maxlength="2" size="2" min="1" max="31" required>
 							</div>
 						</div>
 						
@@ -112,7 +115,7 @@
 			<hr>
 			
 			<div class="footer">
-				<p>A <a href="http://mylesbraithwaite.com/" title="Myles Alden Braithwaite">Myles Braithwaite</a> project.</p>
+				<p>Made by <a href="http://mylesbraithwaite.com/" title="Myles Alden Braithwaite">Myles Braithwaite</a> with <i class="fa fa-heart"></i> in Toronto.</p>
 			</div>
 		</div>
 	</body>
