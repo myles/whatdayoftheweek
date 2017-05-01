@@ -46,7 +46,7 @@
 			<hr>
 			
 			<div class="footer">
-				<p>Made by <a href="http://mylesbraithwaite.com/" title="Myles Alden Braithwaite">Myles Braithwaite</a> with <i class="fa fa-heart"></i> in Toronto.</p>
+				<p>Made by <a href="https://mylesb.ca/" title="Myles Alden Braithwaite">Myles Braithwaite</a> with <i class="fa fa-heart"></i> in Toronto.</p>
 			</div>
 		</div>
 	</body>
