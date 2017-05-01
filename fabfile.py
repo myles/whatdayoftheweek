@@ -15,6 +15,6 @@ def deploy():
     rsync_project(
         local_dir='./source/',
         remote_dir='/home/public/',
-        delete=False,
+        delete=True,
         extra_opts='--exclude=".DS_Store"'
     )
