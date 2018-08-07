@@ -7,6 +7,6 @@
     "grunt-contrib-watch": "0.6.1",
     "grunt-php": "1.5.1",
     "grunt-phplint": "0.1.0",
-    "grunt-rsync": "0.6.2"
+    "grunt-rsync": "3.0.0"
   }
 }
